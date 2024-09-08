@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiply Two Numbers</title>
+  </head>
+  <body>
+    <button onclick="multiply(4)">Click Me!</button>
+    <p id="result"></p>
+
+    <script>
+      // Function to multiply two numbers
+      function multiply(a, b) {
+        // Check if 'b' is undefined and assign default value if true
+        if (b === undefined) {
+          alert("The value of b is undefined");
+          b = 5; // Default value of b
+        }
+        // Multiply the two numbers
+        var result = a * b;
+
+        // Display the result inside the <p> tag with id 'result'
+        document.getElementById("result").innerHTML = "The product is: " + result;
+      }
+    </script>
+  </body>
+</html>
